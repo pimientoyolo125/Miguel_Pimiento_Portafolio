@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <script src="https://kit.fontawesome.com/650c668a14.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" th:href="@{/css/ingresar.css}">
+</head>
+
+<body>
+    <div class="columna">
+        <form id="registrationForm" class="box" method="post" action="/ingresar">
+            <H1><b>Iniciar sesión</b></H1>
+            <center>
+                <figure class="image is-128x128">
+                    <img th:src="@{/images/usuario.png}">
+                </figure>
+                <br>
+                <p class="porDefecto tag is-danger is-light is-medium" th:if="${condicion}">Usuario invalido</p>
+            </center>
+            <div class="field">
+                <label class="label">Correo electrónico</label>
+                <div class="control has-icons-left">
+                    <input class="input " type="email" id="correo" name="correo" placeholder="Dirección de correo" required>
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-envelope"></i>
+                      </span>
+                </div>
+            </div>
+            <div class="field">
+                <label class="label">Contraseña</label>
+                <div class="control has-icons-left">
+                    <input class="input " type="password" id="contrasena" name="contrasena" placeholder="Ingrese su contraseña" required>
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-lock"></i>
+                      </span>
+                </div>
+                <div class="boton field is-grouped">
+                    <div class="control">
+                        <button class="button is-link is-fullwidth is-outlined is-rounded" type="submit">Ingresar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field">
+                No posee una cuenta?
+                <a th:href="@{/registro}"><u>Registrese aqui</u></a>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

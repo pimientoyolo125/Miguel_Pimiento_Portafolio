@@ -1,0 +1,21 @@
+<div class="text-center" *ngIf="!movies">
+    <img src="/assets/images/loading.gif" alt="Cargando..." class="img-fluid" style="max-width: 100px; margin-top: 25vh;">
+</div>
+
+<div class="row" *ngIf="movies">
+    <div class="col-md-3 col-sm-6 col-xs-12 mb-3" *ngFor="let movie of movies">
+        <div class="alert alert-info cursor-pointer" [routerLink]="['/movie', movie._id]" style="height: 100%;">
+            <div class="card-body text-center">
+                <div>
+                    <p class="card-tittle">Título: {{movie.title}}</p>
+                </div>
+                <div>
+                    <p>{{movie.year}}</p>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <img [src]="movie.image" [alt]="movie.title" class="card-img-top" style="max-width: 100%;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

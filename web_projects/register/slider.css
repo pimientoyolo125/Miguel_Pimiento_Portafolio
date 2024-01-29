@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #833ab4;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: content-box;
+}
+
+.form-register {
+    width: 500px;
+    background-color: white;
+    padding: 40px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    font-family: 'calibri';
+    box-shadow: 0 0 6px 0 #000;
+}
+
+.form-register h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Cambria;
+    margin-top: 10px;
+}
+
+.controls {
+    width: 100%;
+    background: none;
+    color: #6d6d6d;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    border: 1px solid #aee0f0;
+    border-radius: 4px;
+    font-family: 'calibri';
+}
+
+.form-label {
+    font-family: 'sans';
+    font-size: 18px;
+}
+
+.form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.form-register a {
+    color: white;
+    text-decoration: none;
+}
+
+.form-register a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.form-register .botons {
+    width: 50%;
+    background: #aee0f0;
+    border: none;
+    padding: 12px;
+    color: black;
+    margin: 16px 100px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.porDefecto {
+    display: none;
+}
+
+.activarMensaje {
+    font-size: 8px;
+    position: relative;
+    color: red;
+    display: block;
+}
+
+.activarMensajeCorrecto {
+    font-size: 8px;
+    position: relative;
+    color: #1ad401;
+    display: block;
+}
+
+.formGustos {
+    padding: 10px;
+}

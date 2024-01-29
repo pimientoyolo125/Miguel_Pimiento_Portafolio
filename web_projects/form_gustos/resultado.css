@@ -1,0 +1,37 @@
+#cabeza_tabla{
+    background-color: #28a2b4;
+    color: #ffff;
+    font-size: 40px;
+    text-align: left; /* Alineación del texto a la izquierda */
+    vertical-align: middle;
+}
+
+#imagen{
+    height: 100px;
+    width: 100px;
+}
+
+#contenedor{
+    width: 450px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+#th_content {
+    display: flex; /* Utilizar un contenedor flexible */
+    align-items: center; /* Alinear verticalmente al centro */
+}
+
+td{
+    color: rgb(48, 69, 255);
+}
+
+td {
+    display: flex;
+    justify-content: space-between;
+  }

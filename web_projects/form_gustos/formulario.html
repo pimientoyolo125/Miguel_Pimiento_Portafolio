@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developer</title>
+    
+    <script src="https://kit.fontawesome.com/23fa25c632.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"/>
+
+    <link rel="stylesheet" href="formulario.css">
+
+    <script src="formulario.js".js"></script>
+
+</head>
+<body>
+    <div class="div_titulo">
+        <h1 id="titulo"><strong>Web</strong>Developer</h1>
+    </div>
+
+    <div class="contenedor">
+        <p id="titulo_formulario">formulario de afiliación</p>
+
+        <form class="formulario">
+
+            <div class="ent">
+                <i class="fa-solid fa-user icon"></i> 
+                <input class="entradas input" type="text" placeholder="Nombre completo" id="nombre">   
+            </div>
+
+            <div class="ent">
+                <i class="fa-solid fa-envelope"></i>
+                <input class="entradas input" type="text" placeholder="Email" id="email">   
+            </div>
+
+            <div class="ent">
+                <i class="fa-solid fa-phone"></i>
+                <input class="entradas input" type="text" placeholder="text" id="telefono">   
+            </div>
+
+            <div id="ingreso_gustos" class="field has-addons">
+                <div class="control is-expanded" id="div_input_gustos">
+                  <input class="input" type="text" id="input_gustos" />
+                </div>
+                <div id="div_guardar" class="control">
+                  <a onclick="guardar_gusto()" class="button is-success is-outlined" id="guardar">Gustos</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="columns">
+                  
+                    <div id="div_bandera" class="column is-2" class="fa-light fa-flag">
+                        <i class="fa-regular fa-flag" id="icon_bandera"></i>
+                    </div>
+                    <div class="column">
+                        <table class="table is-bordered is-fullwidth" id="tabla_gustos">
+                        <thead>
+                            <th>Gustos</th>
+                            <th>%</th>
+                            <th>edit</th>
+                        </thead>
+                        <tbody id="body_tabla_gustos">
+                            
+                        </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div id="div_botones">
+                <p>Pulse Aceptar para guardar los cambios o cancelar para anularlos</p>
+                <input type="button" class="button is-outlined"" onclick="aceptar()" value="Aceptar"> 
+                <input type="reset" onclick="window.location.reload()" class="button is-danger is-outlined" value="Cancelar">
+            </div>
+
+            <div id="div_link">
+                <a id="link" href="https://sites.google.com/view/dweb1-uis" target="_">Ir a Site de P Web</a>  
+            </div>
+
+        </form>
+    </div>
+    
+</body>
+</html>

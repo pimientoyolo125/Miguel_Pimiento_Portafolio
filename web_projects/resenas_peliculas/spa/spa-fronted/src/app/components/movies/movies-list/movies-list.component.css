@@ -1,0 +1,13 @@
+/* Agrega esto a tu archivo de estilos CSS (por ejemplo, styles.css) */
+
+.card {
+    margin-bottom: 20px;
+    /* Espacio entre las tarjetas */
+}
+
+@media (max-width: 767px) {
+    .card {
+        width: 100%;
+        /* Ajusta el ancho de la tarjeta al 100% en dispositivos pequeños */
+    }
+}

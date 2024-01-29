@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+
+    <title id="title">Resultado</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"/>
+
+    <script src="https://kit.fontawesome.com/23fa25c632.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="resultado.css">
+
+  </head>
+  <body>
+    <div id="contenedor">
+      <article class="media-content">
+        <h1 style="text-align: center;" class="title">Resultado</h1>
+        <div class="content" id="contentprin">
+          <table class="table is-bordered is-fullwidth" id="tabla_resultado">
+            <thead>
+              <tr>
+                <th id="cabeza_tabla">
+                  <div id="th_content">
+                    <img id="imagen" src="carita_feliz.png"/>
+                  </div>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  Email:
+                  <span id="email" class="tag is-primary"></span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Telefono:
+                  <span id="telefono" class="tag is-info"></span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Gusto:
+                  <span id="gusto" class="tag is-success">Success</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Porcentaje %:
+                  <span id="porcentaje" class="tag is-danger">Danger</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+    </div>
+  </body>
+  <script type="text/javascript" src="resultado.js"></script>
+</html>

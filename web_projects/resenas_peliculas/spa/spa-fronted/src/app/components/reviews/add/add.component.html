@@ -1,0 +1,22 @@
+<div class="container col-md-6">
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            <h3 class="mb-0">Comparte tu opinión sobre esta película</h3>
+        </div>
+        <div class="card-body">
+            <form class="form-group">
+                <div class="form-controls">
+                    <label for="coment" class="form-label">Escribe tu opinión al respecto</label>
+                    <textarea type="text" class="form-control" name="coment" id="coment" [(ngModel)]="review.comentario" required minlength="4" maxlength="150" #coment="ngModel"></textarea>
+                    <div class="alert alert-danger mt-2" [hidden]="coment.valid || coment.pristine">
+                        Mínimo 4 caracteres, máximo 150.
+                    </div>
+                    <p></p>
+                </div>
+                <button type="submit" (click)="guardarSubmit()" class="btn btn-success" [disabled]="!coment.valid">Añadir</button>
+                <button type="button" (click)="Regresar()" class="btn btn-danger ms-2">Cancelar</button>
+            </form>
+        </div>
+    </div>
+    <p></p>
+</div>

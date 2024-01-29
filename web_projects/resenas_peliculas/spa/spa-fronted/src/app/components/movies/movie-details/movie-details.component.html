@@ -1,0 +1,48 @@
+<div class="text-center" *ngIf="!movie">
+    <img src="/assets/images/loading.gif" alt="Cargando..." class="img-fluid" style="max-width: 100px; margin-top: 25vh;">
+</div>
+
+<div class="row" *ngIf="movie">
+    <div class="col-md-4">
+        <div class="card mb-4 rounded">
+            <img [src]="movie.image" [alt]="movie.title" class="card-img-top">
+        </div>
+    </div>
+
+    <div class="col-md-7 ms-auto">
+        <div class="container bg-light p-4 rounded">
+            <table class="table table-hover table-white">
+                <tbody>
+                    <tr>
+                        <td>Título</td>
+                        <td>{{movie.title}}</td>
+                    </tr>
+                    <tr>
+                        <td>Año</td>
+                        <td>{{movie.year}}</td>
+                    </tr>
+                    <tr>
+                        <td>Género</td>
+                        <td>
+                            <span *ngFor="let genre of movie.genres" class="badge bg-dark">
+                                {{genre.name}}
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Calificación</td>
+                        <td>{{movie.rating}}</td>
+                    </tr>
+                    <tr>
+                        <td>Lanzamiento</td>
+                        <td>{{movie.release}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="d-flex justify-content-start">
+                <button (click)="Regresar()" class="btn btn-primary me-3">Regresar</button>
+                <button (click)="Listar(movie._id)" class="btn btn-info">Ver reseñas</button>
+            </div>
+        </div>
+    </div>
+</div>

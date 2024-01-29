@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" th:href="@{/css/registro.css}">
+
+</head>
+
+<body>
+    <div class="register_form" id="formulario">
+        <form id="formulario_reg" class="box" action="/registro" method="post">
+            <H1><b>Registrarse</b></H1>
+            <center>
+                <p class="porDefecto tag is-danger is-light is-medium" th:if="${condicion eq false}">Correo o nombre de usuario en uso</p>
+                <p class="porDefecto tag is-success is-light is-medium" th:if="${condicion eq true}">Usuario registrado con exito</p>
+            </center>
+            <br th:if="${condicion eq false}">
+            <br th:if="${condicion eq true}">
+            <div class="field">
+                <label class="label">Nombre</label>
+                <div class="control">
+                    <input class="input " type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+                    <p class="porDefecto tag is-danger is-light is-medium" id="nombresError">Maximo 50 caracteres</p>
+                    <p class="porDefecto tag is-danger is-light is-medium">Nombre invalido</p>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Apellido</label>
+                <div class="control">
+                    <input class="input " type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido" required>
+                    <p class="porDefecto tag is-danger is-light is-medium" id="apellidosError">Maximo 50 caracteres</p>
+                    <p class="porDefecto tag is-danger is-light is-medium">Apellido invalido</p>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Correo electrónico</label>
+                <div class="control">
+                    <input class="input " type="email" id="correo" name="correo" placeholder="Dirección de correo" required>
+                    <p class="porDefecto tag is-danger is-light is-medium" id="correoError">Correo invalido</p>
+
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">telefono</label>
+                <div class="control">
+                    <input class="input " type="text" id="telefono" name="telefono" placeholder="número de teléfono" required>
+                    <p class="porDefecto tag is-danger is-light is-medium" id="celularError">Numero de telefono invalido</p>
+
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Nombre de usuario</label>
+                <div class="control">
+                    <input class="input " type="text" id="nombreUsuario" name="nombreUsuario" placeholder="Nombre de usuario" required>
+                    <p class="porDefecto tag is-danger is-light is-medium" id="nombresError">Maximo 50 caracteres</p>
+                    <p class="porDefecto tag is-danger is-light is-medium">Minimo 8 caracteres</p>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Contraseña</label>
+                <div class="control">
+                    <input class="input " type="password" id="contrasena" name="contrasena" placeholder="Ingrese una contraseña" required>
+                    <p class="porDefecto tag is-danger is-light is-medium" id="contraseñasError">Minimo 8 caracteres</p>
+
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Confirmar contraseña</label>
+                <div class="control">
+                    <input class="input " type="password" id="confirmarContrasena" name="confirmarContrasena" placeholder="confirmar contraseña" required>
+                    <p class="porDefecto tag is-danger is-light is-medium" id="confirmarpsError">Contraseñas no coinciden</p>
+
+                </div>
+            </div>
+
+            <div class="field is-grouped">
+                <div class="control">
+                    <button type="button" class="button is-link is-fullwidth is-outlined is-rounded" id="registrar">Registrarse</button>
+                </div>
+            </div>
+
+            <div class="field">
+                Ya tiene una cuenta?
+                <a th:href="@{/ingresar}"><u>Haz click aqui</u></a>
+            </div>
+
+        </form>
+    </div>
+    <script th:src="@{/js/registro.js}"></script>
+</body>
+
+</html>
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" th:href="@{/css/registro.css}">
+</head>
+
+<body>
+    <div class="register_form" id="formulario">
+        <form id="formulario_reg" class="box">
+            <H1><b>Registrarse</b></H1>
+            <div class="field">
+                <label class="label">Nombre</label>
+                <div class="control">
+                    <input class="input " type="text" id="name" name="nombre" placeholder="Ingrese su nombre" required>
+                    <span class="porDefecto tag is-danger is-light is-medium" id="nombresError">Nombre invalido digite de nuevo</span>
+                    <span class="porDefecto tag is-success is-light is-medium" id="nombresCorrecto">correcto</span>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Apellido</label>
+                <div class="control">
+                    <input class="input " type="text" id="last_name" name="apellido" placeholder="Ingrese su apellido" required>
+                    <span class="porDefecto tag is-danger is-light is-medium" id="apellidosError">apellidos invalidos digite de nuevo</span>
+                    <span class="porDefecto tag is-success is-light is-medium" id="apellidosCorrecto">correcto</span>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Correo electrónico</label>
+                <div class="control">
+                    <input class="input " type="email" id="email" name="email" placeholder="Dirección de correo" required>
+                    <span class="porDefecto tag is-danger is-light is-medium" id="correoError">Correo invalido digite de nuevo</span>
+                    <span class="porDefecto tag is-success is-light is-medium" id="correoCorrecto">correcto</span>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">telefono</label>
+                <div class="control">
+                    <input class="input " type="text" id="tel" name="tel" placeholder="número de teléfono" required>
+                    <span class="porDefecto tag is-danger is-light is-medium" id="celularError">Numero de telefono invalido</span>
+                    <span class="porDefecto tag is-success is-light is-medium" id="celularCorrecto">correcto</span>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Nombre de usuario</label>
+                <div class="control">
+                    <input class="input " type="text" id="username" name="username" placeholder="username" required>
+                    <span class="porDefecto tag is-danger is-light is-medium" id="usuarioError">Usuario invalido digite de nuevo</span>
+                    <span class="porDefecto tag is-success is-light is-medium" id="usuarioCorrecto">correcto</span>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Contraseña</label>
+                <div class="control">
+                    <input class="input " type="password" id="password" name="password" placeholder="Ingrese una contraseña" required>
+                    <span class="porDefecto tag is-danger is-light is-medium" id="contraseñasError">Contraseña insegura digite de nuevo</span>
+                    <span class="porDefecto tag is-success is-light is-medium" id="contraseñasCorrecto">correcto</span>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Confirmar contraseña</label>
+                <div class="control">
+                    <input class="input " type="password" id="confirm_password" name="confirm_password" placeholder="confirmar contraseña" required>
+                    <span class="porDefecto tag is-danger is-light is-medium" id="confirmarpsError">La contraseña no coincide</span>
+                    <span class="porDefecto tag is-success is-light is-medium" id="confirmarpsCorrecto">correcto</span>
+                </div>
+            </div>
+
+            <div class="field is-grouped">
+                <div class="control">
+                    <button class="button is-link is-fullwidth is-outlined is-rounded" id="btnRegistro">Registrarse</button>
+                </div>
+            </div>
+
+            <div class="field">
+                Ya tiene una cuenta?
+                <a th:href="@{/ingresar}"><u>Haz click aqui</u></a>
+            </div>
+
+        </form>
+    </div>
+    <script th:src="@{/js/registro.js}"></script>
+</body>
+
+</html> -->

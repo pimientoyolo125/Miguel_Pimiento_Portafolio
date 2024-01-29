@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libros</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <script src="https://kit.fontawesome.com/650c668a14.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" th:href="@{/css/libros.css}">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="title">
+        <h1>Aplicación de gestión de libros</h1>
+    </div>
+
+    <div class="breadcrumb">
+        <nav class="breadcrumb is-centered is-medium" aria-label="breadcrumbs">
+            <ul class="tablas">
+                <li>
+                    <a th:href="@{/addyLibros}">
+                        <span class="icon is-small ">
+                        <i class="fas fa-regular fa-book " style="color: #000000; "></i>
+                        </span>
+                        <span>Añadir libro</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>    
+    <div class="secciones">
+        <article class="list_book" id="book_list">
+            <table class="table is-bordered is-hoverable  " id="lista_libros">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Titulo</th>
+                        <th>Autor</th>
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+                        <th>Opciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="libro:${libros}">
+                        <td th:text="${libro.id}"></td>
+                        <td th:text="${libro.titulo}"></td>
+                        <td th:text="${libro.autor}"></td>
+                        <td th:text="${libro.cantidad}"></td>
+                        <td th:text="${libro.precio}"></td>
+                        <td>
+                            <a class="button is-link" th:href="@{/editarLibro/}+${libro.id}">Editar</a>
+                            <button class="button is-danger" th:onclick="'eliminarLibro(\'' + ${libro.id} + '\')'">Eliminar</button>
+                        </td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+    </div>
+    <script th:src="@{/js/listaLibros.js}"></script>
+</body>
+
+</html>

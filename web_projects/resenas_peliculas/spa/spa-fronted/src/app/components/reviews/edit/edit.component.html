@@ -1,0 +1,24 @@
+<div class="container col-md-6">
+    <div class="card">
+        <div class="card-header bg-info text-white">
+            <h3 class="mb-0">Tu opinión ha cambiado</h3>
+        </div>
+        <div class="card-body">
+            <form class="form-group">
+                <div class="form-controls">
+                    <label for="coment" class="form-label">¿Cuál es tu nueva opinión?</label>
+                    <textarea type="text" class="form-control" name="coment" id="coment" [(ngModel)]="review.comentario" required minlength="4" maxlength="100" #coment="ngModel"></textarea>
+                    <div class="alert alert-danger mt-2" [hidden]="coment.valid || coment.pristine">
+                        Mínimo 4 caracteres, máximo 100.
+                    </div>
+                    <p></p>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <button type="submit" (click)="Actualizar()" class="btn btn-primary" [disabled]="!coment.valid">Actualizar</button>
+                    <button type="button" (click)="Regresar()" class="btn btn-danger ms-2">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <p></p>
+</div>

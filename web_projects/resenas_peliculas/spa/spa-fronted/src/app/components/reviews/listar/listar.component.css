@@ -1,0 +1,28 @@
+.card-body {
+    overflow-x: auto;
+    /* Agrega desplazamiento horizontal si la tabla se desborda */
+}
+
+.table-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Centra los botones en el contenedor */
+    margin-top: 10px;
+    /* Ajusta el margen superior entre los botones y la tabla */
+}
+
+.table-buttons button {
+    margin: 5px;
+    /* Ajusta el margen entre los botones */
+}
+
+
+/* Media query para pantallas más pequeñas */
+
+@media (max-width: 768px) {
+    .table-buttons {
+        justify-content: flex-start;
+        /* Cambia a flex-start para evitar centrar en pantallas más pequeñas */
+    }
+}

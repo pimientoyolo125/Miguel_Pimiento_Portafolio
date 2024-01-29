@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <script src="https://kit.fontawesome.com/650c668a14.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" th:href="@{/css/libros.css}">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="title">
+        <h1>Aplicación de gestión de libros</h1>
+    </div>
+
+    <div class="breadcrumb">
+        <nav class="breadcrumb is-centered is-medium" aria-label="breadcrumbs">
+            <ul class="tablas">
+                <li>
+                    <a href=" #book_list">
+                        <span class="icon is-small ">
+                        <i class="fas fa-light fa-list " style="color: #000000; "></i>
+                        </span>
+                        <span>Lista de libros</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="secciones">
+        <article class="enter_form" id="ingresar_libro">
+            <form class="box" id="anadir_formulario">
+                <div class="field">
+                    <label class="label">Nombre del libro</label>
+                    <div class="control">
+                        <input class="input" type="text" id="Nombre_libro" name="Nombre_libro" placeholder="Ingrese el nombre del libro" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Autor del libro</label>
+                    <div class="control">
+                        <input class="input" type="text" id="autor_libro" name="autor_libro" placeholder="Ingrese el nombre del autor" required>
+                    </div>
+                </div>
+                <div class="field">
+                    </label>
+                    <label class="label">Cantidad</label>
+                    <div class="control">
+                        <input class="input" type="text" id="cantidad" name="cantidad" placeholder="Ingrese la cantidad disponible" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Precio del libro</label>
+                    <div class="control">
+                        <input class="input" type="text" id="precio_libro" name="precio_libro" placeholder="Ingrese el precio del libro" required>
+                    </div>
+                </div>
+                <div class="field is-grouped">
+                    <div class="control">
+                        <button class="button is-link is-responsive is-outlined is-rounded" id="btnAddBook">Añadir</button>
+
+                    </div>
+                    <div class="control">
+                        <button class="button is-danger is-responsive is-outlined is-rounded" id="btnCancel">Cancelar</button>
+                    </div>
+                </div>
+
+            </form>
+        </article>
+    </div>
+</body>
+
+</html>

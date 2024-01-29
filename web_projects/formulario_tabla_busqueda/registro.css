@@ -1,0 +1,142 @@
+body {
+    background-image: radial-gradient(circle at 50% 50%, #ff2ba3 0, #ee27a4 10%, #d024a1 20%, #af2199 30%, #8c1b8c 40%, #66147a 50%, #420d66 60%, #200754 70%, #000043 80%, #000035 90%, #00002a 100%);
+}
+
+#formulario {
+    background-color: white;
+    width: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-shadow: 0px 0px 10px 10px blueviolet;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.grilla {
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    width: 940px;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    box-shadow: 0px 0px 10px 10px blueviolet;
+    display: grid;
+    grid-template-columns: repeat(5, 100%);
+    grid-template-rows: repeat(5, 100%);
+    gap: 1em;
+    border: 1px solid black;
+    font-size: 15px;
+    font-family: sans-serif;
+    height: auto;
+}
+
+.centered {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#tableBody_users {
+    background-color: rgb(240, 240, 240);
+}
+
+.entrada {
+    width: 300px;
+    margin: auto;
+    padding-top: 12px;
+}
+
+.ingresar {
+    width: 290px;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 1px 0px blue;
+    border: 0.1px solid blueviolet;
+    background-color: rgb(240, 240, 240);
+    font-family: monospace;
+}
+
+.ingresar_select {
+    width: 297px;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 1px 0px blue;
+    border: 0.1px solid blueviolet;
+    background-color: rgb(240, 240, 240);
+    font-family: monospace;
+}
+
+#titulo_formulario {
+    width: 300px;
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-bottom: 10px;
+    font-family: monospace;
+}
+
+.etiqueta {
+    font-size: 20px;
+    margin: auto;
+    font-family: monospace;
+}
+
+.etiqueta_box {
+    font-size: 20px;
+    font-family: monospace;
+    align-items: center;
+}
+
+#despliegue_enfermedades {
+    width: 300px;
+    margin: auto;
+    padding-top: 10px;
+    margin-bottom: 30px;
+    display: none;
+}
+
+.entrada_check {
+    width: 300px;
+    margin: auto;
+    display: flex;
+    margin-top: 30px;
+}
+
+#enfermedades {
+    flex: 0;
+    width: 40px;
+    font-size: 10px;
+}
+
+#registrar {
+    background-color: #250bdf;
+    font-family: monospace;
+    width: 200px;
+    font-size: 25px;
+    color: white;
+    border: 2px solid blueviolet;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+#separar {
+    display: flex;
+    height: auto;
+}
+
+#tabla_usuarios{
+    width: 98%;
+    height: auto;
+    margin: auto;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
