@@ -1,5 +1,4 @@
-## Proyecto de simulacion de, en la cual reprecenta
-Un ambiente con lobos, conejos y cazadores
+## Proyecto de simulacion de, en la cual reprecenta un ambiente con lobos, conejos y cazadores
 
 ### Instrucciones de uso:
 
