@@ -3,7 +3,7 @@
 
 ###Instrucciones de uso:
 
--ejecutar el archivo principal.py
+-ejecutar el archivo principal.py.
 -con la barra espaciadora se puede pausar o reanudar la simlacion
 -con las flechas izquierda y derecha varia la velocidad de simulacion
 -con la teclas 0,1,2,3. se elige la entidad a colocar, esto se mostrara arriba en "seleccion"
