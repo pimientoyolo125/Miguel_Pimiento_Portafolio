@@ -1,4 +1,4 @@
-##Pagina web de formulario con una tabla de busqueda
+## Pagina web de formulario con una tabla de busqueda
 
 Pagina web sencilla, la cual cuenta con un formulario, del cual al hacer click
 en registrar se validad que sean datos ingresados de manera correcta, o que cumpla
