@@ -16,8 +16,13 @@
 ###Consideraciones:
 
 -los cuadrados cafes representa piso solido
+
 -los cuadrados verdes representan porosidad
+
 -los cuadrados amarillos representan sustancia toxica
+
 -las cuadrados azules representan el cuerpo de agua
+
 -las diferentes tonalidades del amarillo reprecentan concentraciones de esta
+
 -la sustancias se mueven y se esparcen de manera probabilistica bajo un modelo matematico
