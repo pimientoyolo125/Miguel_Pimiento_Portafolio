@@ -1,13 +1,13 @@
-##Proyecto de simulacion de, en la cual reprecenta
-##Un ambiente con lobos, conejos y cazadores
+## Proyecto de simulacion de, en la cual reprecenta
+## Un ambiente con lobos, conejos y cazadores
 
-###Instrucciones de uso:
+### Instrucciones de uso:
 
--ejecutar el archivo principal.py.
--con la barra espaciadora se puede pausar o reanudar la simlacion
--con las flechas izquierda y derecha varia la velocidad de simulacion
--con la teclas 0,1,2,3. se elige la entidad a colocar, esto se mostrara arriba en "seleccion"
--con el click izquierdo se puede colocar la selecciona (solo cuando este en pausa)
+- ejecutar el archivo principal.py
+- con la barra espaciadora se puede pausar o reanudar la simlacion
+- con las flechas izquierda y derecha varia la velocidad de simulacion
+- con la teclas 0,1,2,3. se elige la entidad a colocar, esto se mostrara arriba en "seleccion"
+- con el click izquierdo se puede colocar la selecciona (solo cuando este en pausa)
 
 ###Consideraciones:
 
