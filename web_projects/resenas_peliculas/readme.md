@@ -1,4 +1,4 @@
-## Proyecto de reseñas de peliculas (Spring Boot + Angular + PostgreQL + APIs)
+## Proyecto de reseñas de peliculas (Spring Boot + Angular + PostgreQL + API's)
 
 Pagina web de manejo de reseñas de peliculas, en esta los usuarios
 podria ingresar libremente y buscar peliculas por palabras clave, 
