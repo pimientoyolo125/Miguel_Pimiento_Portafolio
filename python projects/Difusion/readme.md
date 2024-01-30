@@ -1,6 +1,7 @@
 ##Proyecto de simulacion de difusion de sustancias
 ##Arrojadas en tierras adyacentes a cuerpos de agua
 
+
 ###Instrucciones de uso:
 
 -ejecutar difusion.py
@@ -10,6 +11,7 @@
 -con flechas izquierda y derecha se modifica la velocidad de simulacion
 
 -con el click izquierdo se coloca la sustancia toxica
+
 
 ###Consideraciones:
 
