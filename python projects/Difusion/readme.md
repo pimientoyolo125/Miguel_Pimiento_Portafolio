@@ -4,8 +4,11 @@
 ###Instrucciones de uso:
 
 -ejecutar difusion.py
+
 -con la la tecla espaciadora se puede pausar y reanudar la simulacion
+
 -con flechas izquierda y derecha se modifica la velocidad de simulacion
+
 -con el click izquierdo se coloca la sustancia toxica
 
 ###Consideraciones:
